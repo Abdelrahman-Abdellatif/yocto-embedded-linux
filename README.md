@@ -75,7 +75,7 @@ As this repo grows, layers will progressively cover more of the Yocto/BitBake fe
 Each layer can be added independently to a Yocto build using `bitbake-layers add-layer`. See the individual layer's `README.md` for exact build and test instructions.
 
 ```bash
-git clone https://github.com/<your-username>/yocto-embedded-linux.git
+git clone https://github.com/Abdelrahman-Abdellatif/yocto-embedded-linux
 bitbake-layers add-layer /path/to/yocto-embedded-linux/meta-student
 bitbake <recipe-name>
 ```
