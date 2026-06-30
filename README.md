@@ -40,7 +40,7 @@ Each `meta-*` folder is a complete, independent Yocto layer with its own `conf/l
 | Layer | Focus | Status | Link |
 |---|---|---|---|
 | `meta-student` | Native C/C++ recipes, custom BitBake tasks (`addtask`), Git-fetched recipes, custom Makefile integration | Done | [meta-student/README.md](./meta-student/README.md) |
-| `meta-<next>` | TBD | Planned | — |
+| `meta-meta-openmotion` | cross-compiles the host C application for the ARM Cortex-A35 inside the STM32MP257F-DK and includes it in the Linux image | Done | ./meta-openmotion/|
 
 This table is updated every time a new layer is added.
 
