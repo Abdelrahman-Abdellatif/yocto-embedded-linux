@@ -6,13 +6,13 @@
 
 This repository is a collection of custom Yocto layers and recipes I build while learning embedded Linux development. Each subfolder is a self-contained Yocto layer that explores a different concept: native C/C++ recipes, custom BitBake tasks, fetching from Git, image customization, systemd services, and more.
 
-The goal of this repo is not to show one finished product, but to show **how I learn and practice** — a structured, growing record of real Yocto work that a recruiter or hiring manager can browse and understand quickly.
+The goal of this repo is not to show one finished product, but to show **how I learn and practice** — a structured, growing record of real Yocto work.
 
 ---
 
 ## Why This Repo Exists
 
-When applying for embedded Linux roles, it's hard to prove hands-on Yocto experience without a paper trail. This repo is that paper trail:
+This repo is that paper trail:
 
 - Every layer is a real, working BitBake layer — not a copy-pasted tutorial.
 - Every layer has its own `README.md` explaining what it does and what it taught me.
