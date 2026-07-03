@@ -1,0 +1,19 @@
+# 1. Why does the program expect argc to equal 4 even though only three scores are entered?
+beocuse the first argc is the program name itself
+
+# 2. What does the > symbol do in the do_run task?
+it redirect the output to a file it creat itself if not excited and store the output there
+
+#3. What average do you expect from scores 80, 90, and 70?
+Average: 80.00
+
+# 4. Where are QUIZ_SCORE, LAB_SCORE, and EXAM_SCORE defined?
+it was defined locally, becouse it is not in a config file, it is in a bb file,
+so they are local varibales and they are only seen by the recipe.
+
+# 5. What is the benefit of using ?= when defining the score variables?
+
+this is the Soft Assignment or Default Assignment operator.
+
+It Prevents Overwriting User Configurations
+

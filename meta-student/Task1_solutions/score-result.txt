@@ -1,0 +1,6 @@
+Student Score Report
+Quiz: 80
+Lab: 90
+Exam: 70
+Average: 80.00
+Result: PASS

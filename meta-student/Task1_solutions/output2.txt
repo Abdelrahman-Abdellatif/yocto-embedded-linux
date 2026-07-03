@@ -1,0 +1,25 @@
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco$ ls
+bitbake-cookerdaemon.log  buildhistory	cache  conf  downloads	sstate-cache  tmp-glibc
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco$ bitbake-go-WORKDIR student-score-native
+Querying BitBake for student-score-native's WORKDIR (this may take a few seconds)... 
+Moved to: /home/abdelrahman/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0$ ls
+configure.sstate	  image		   patches	   recipe-sysroot-native  source-date-epoch  student-output   temp
+deploy-source-date-epoch  license-destdir  recipe-sysroot  score.cpp		  spdx		     sysroot-destdir
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0$ cd student-output/
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0/student-output$ ls
+score-result.txt  student-score
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0/student-output$ cat score-result.txt
+Student Score Report
+Quiz: 80
+Lab: 90
+Exam: 70
+Average: 80.00
+Result: PASS
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0/student-output$ file student-score
+student-score: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /home/abdelrahman/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/sysroots-uninative/x86_64-linux/lib/ld-linux-x86-64.so.2, BuildID[sha1]=bf3fc97f267dacc895928665201cba56927df2c8, for GNU/Linux 3.2.0, not stripped
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/student-score-native/1.0/student-output$ 
+
+
+
+

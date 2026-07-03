@@ -1,0 +1,30 @@
+# 1. What does inherit native change about the application and where it runs?
+inherit native changes the compilation to be compiled for the host machine [development machine]
+which is the x86. so it makes a binary that runs on x86 instead od the target mahcine which is the
+arm64 [in my case STM32MP257-DK]. 
+
+# 2. Why should a recipe use ${CXX} instead of writing g++ directly?
+ensures your recipe is hardware-agnostic. so we can use the smae recipe for diffrent hardware
+and alsoo if we jsut wrote g++ instead the terminal will use the default complier which is
+for x86 not the target machine.
+
+# 3. Which task creates the hello-native executable?
+do_compile
+
+# 4. Which task creates hello-output.txt?
+
+do_run
+
+# 5. Write the exact ${WORKDIR} path reported by your build.
+abdelrahman@abdelrahman-1:~/yocto/build-openstlinuxweston-stm32mp25-disco/tmp-glibc/work/x86_64-linux/hello-native/1.0/
+
+# 6. Explain the meaning of: addtask run after do_compile before do_install.
+
+it force the yocoto to make the sequance we want instead, becouse yoctot hjas the 
+
+Directed Acyclic Graph (DAG) of tasks. Normally, the execution order of standard tasks looks are
+
+do_fetch -> do_unpack -> do_patch -> do_configure -> do_compile -> do_install -> do_populate_sysroot -> do_package
+
+but by using this our recipe defines a completely custom, non-standard bash function called do_run().
+and execute it in our own desire.

@@ -1,0 +1,2 @@
+Hello from a Yocto native recipe!
+The application ran on the build computer.
