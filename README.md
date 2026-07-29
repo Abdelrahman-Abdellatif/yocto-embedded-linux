@@ -28,7 +28,7 @@ yocto-embedded-linux/
 ├── meta-student/               # Practice layer: native recipes, custom BitBake tasks, Git fetching
 ├── meta-openmotion/          # A custom OpenEmbedded layer that cross-compiles the host C application for the ARM Cortex-A35 inside the STM32MP257F-DK and includes it in the Linux image.
 
-└── meta-<next-layer>/          # Future layer
+└── meta-abou-infotainment/          # A custom Yocto/OpenEmbedded Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system
 ```
 
 Each `meta-*` folder is a complete, independent Yocto layer with its own `conf/layer.conf`, recipes, and `README.md`.
@@ -40,7 +40,9 @@ Each `meta-*` folder is a complete, independent Yocto layer with its own `conf/l
 | Layer | Focus | Status | Link |
 |---|---|---|---|
 | `meta-student` | Native C/C++ recipes, custom BitBake tasks (`addtask`), Git-fetched recipes, custom Makefile integration | Done | [meta-student/README.md](./meta-student/README.md) |
-| `meta-meta-openmotion` | cross-compiles the host C application for the ARM Cortex-A35 inside the STM32MP257F-DK and includes it in the Linux image | Done | ./meta-openmotion/|
+| `meta-meta-openmotion` | cross-compiles the host C application for the ARM Cortex-A35 inside the STM32MP257F-DK and includes it in the Linux image | Done | (./meta-openmotion/README.md)|
+| `meta-abou-infotainment` | A custom Yocto/OpenEmbedded Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system, built for the STM32MP257F-DK (STM32MP2 series, Cortex-A35 + Cortex-M33 coprocessor), built entirely from upstream Poky and OpenEmbedded layers.| Done | (./meta-abou-infotainment/README.md)|
+
 
 This table is updated every time a new layer is added.
 
