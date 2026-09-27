@@ -96,4 +96,4 @@ bitbake <recipe-name>
 **Abdelrahman**
 Embedded Linux & Firmware Engineer — open to opportunities
 
-[LinkedIn](https://www.linkedin.com/in/abdelrahman-abdellatif-93371a405/) · [GitHub](#)
+[LinkedIn](https://www.linkedin.com/in/abdelrahman-abdellatif-/) · [GitHub](#)
