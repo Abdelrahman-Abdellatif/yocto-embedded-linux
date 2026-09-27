@@ -84,8 +84,28 @@ The official Bootlin material is written for the **STM32MP157** (Cortex-A7, STM3
 - Adjusting the SD card flash layout / `create_sdcard_from_flashlayout.sh` invocation for the STM32MP2 image outputs
 - Re-validating the kernel `.bbappend` and Nunchuk driver patch against the STM32MP2 kernel tree [I have not used the device tree file which bootlin provided becouse it does not suit my baord, i just uised the patch only for testing the method]
 - also worth mentioning that if your device is lagging and stopping after starting to build the image it is better to reduce the CUP and memory used by bitbake, for exmaple these were the values i used to be able to build without any probelms, you should add it in the local.conf file inside your build directory. `BB_NUMBER_THREADS = "8"` `PARALLEL_MAKE = "-j 8"` 
+---
+
+### Network boot: NFS + TFTP
+ 
+One of the most valuable parts of this training is setting up **NFS** and **TFTP**, and I'd strongly recommend anyone going through these labs not to skip it. Once it's working, you stop reflashing the SD card for every single change — you just rebuild the rootfs/kernel and reboot the board, which makes iteration dramatically faster.
+ 
+- **NFS (Network File System)**: the board's rootfs is exported from the workstation and mounted by the target over the network at boot (`root=/dev/nfs`), instead of living on the SD card. Verified working on my setup:
+```
+  $ sudo ls /nfs/
+  bin  boot  dev  etc  home  lib  media  mnt  proc  run  sbin  sys  tmp  usr  var
+```
+ 
+- **TFTP (Trivial File Transfer Protocol)**: the kernel image and device tree are served to U-Boot over the network at boot time, instead of being copied to the SD card's boot partition by hand. Verified working on my setup:
+```
+  $ sudo ls /srv/tftp/
+  Image.gz  stm32mp257f-dk.dtb
+```
+ 
+With both in place, the full development loop becomes: rebuild with `bitbake`, reboot the board, done — no SD card handling at all. This is the setup I'd recommend to anyone doing serious iteration on real hardware rather than just following the labs once and moving on.
 
 ---
+
 
 ## Building it
 
