@@ -98,7 +98,7 @@ git clone -b wrynose https://git.openembedded.org/meta-openembedded
 git clone https://github.com/STMicroelectronics/meta-st-stm32mp
 
 # This layer
-git clone https://github.com/<your-username>/yocto-embedded-linux
+git clone https://github.com/Abdelrahman-Abdellatif/yocto-embedded-linux/tree/main/meta-bootlinlabs
 # meta-bootlinlabs lives at yocto-embedded-linux/meta-bootlinlabs
 
 # Set up the build
