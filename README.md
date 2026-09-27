@@ -31,6 +31,8 @@ yocto-embedded-linux/
 └── meta-abou-infotainment/          # A custom Yocto/OpenEmbedded Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system
 |
 |__ meta-bullet-openstlinux/         # A custom Yocto/OpenStlinux [based on st-image-qt.bb base image] Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system
+|
+|__ meta-bootlinlabs/   # Bootlin's Yocto Project/OpenEmbedded training labs, self-studied and adapted/tested on STM32MP257F-DK (STM32MP2, Cortex-A35) instead of the original STM32MP157 target
 ```
 
 Each `meta-*` folder is a complete, independent Yocto layer with its own `conf/layer.conf`, recipes, and `README.md`.
@@ -45,6 +47,7 @@ Each `meta-*` folder is a complete, independent Yocto layer with its own `conf/l
 | `meta-openmotion` | cross-compiles the host C application for the ARM Cortex-A35 inside the STM32MP257F-DK and includes it in the Linux image | Done | [meta-openmotion/README.md](./meta-openmotion/README.md) |
 | `meta-abou-infotainment` | A custom Yocto/OpenEmbedded Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system, built for the STM32MP257F-DK (STM32MP2 series, Cortex-A35 + Cortex-M33 coprocessor), built entirely from upstream Poky and OpenEmbedded layers.| Done | [meta-abou-infotainment/README.md](./meta-abou-infotainment/README.md) |
 | `meta-bullet-openstlinux` | A custom Yocto/OpenStlinux [based on st-image-qt.bb base image] Linux distribution for an automotive-style In-Vehicle Infotainment (IVI) system | Done | [meta-bullet-openstlinux/README.md](./meta-bullet-openstlinux/README.md) |
+| `meta-bootlinlabs` | Bootlin's Yocto Project/OpenEmbedded training labs, self-studied and adapted/tested on STM32MP257F-DK (STM32MP2, Cortex-A35) instead of the original STM32MP157 target | Done | [meta-bootlinlabs/README.md](./meta-bullet-openstlinux/README.md) |
 
 
 
