@@ -1,0 +1,23 @@
+From c3ca41303778eca7a6b52d89a54cd796326ba560 Mon Sep 17 00:00:00 2001
+From: Abdelrahman Abdellatif <abdelrahman0abdellatif@gmail.com>
+Date: Mon, 28 Sep 2026 01:46:16 +0300
+Subject: [PATCH] Change the greeting message
+
+Upstream-Status: Inappropriate
+---
+ src/hello.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/hello.c b/src/hello.c
+index 453962f..1a990e4 100644
+--- a/src/hello.c
++++ b/src/hello.c
+@@ -57,7 +57,7 @@ main (int argc, char *argv[])
+ #endif
+ 
+   /* Having initialized gettext, get the default message. */
+-  greeting_msg = _("Hello, world!");
++  greeting_msg = _("Hello, world from bootlin ^^ ");
+ 
+   /* Even exiting has subtleties.  On exit, if any writes failed, change
+      the exit status.  The /dev/full device on GNU/Linux can be used for
