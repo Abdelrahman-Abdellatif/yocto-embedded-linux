@@ -1,5 +1,11 @@
 # meta-bootlinlabs
 
+
+
+https://github.com/user-attachments/assets/751bf7c3-1d4d-4f02-b72f-d243697bfe10
+
+
+
 **Yocto Project / OpenEmbedded custom layer — Bootlin "Yocto Project and OpenEmbedded system development" training, self-studied and adapted to the STM32MP257F-DK (Cortex-A35).**
 
 > Bootlin's official labs target the STM32MP157 Discovery Kit (Cortex-A7). I went through every lab, rebuilt each step, and re-validated it on my own board, the **STM32MP257F-DK** (STM32MP2 series, Cortex-A35 + Cortex-M33 coprocessor). This repo is the resulting layer plus the full record of what each part does and why.
