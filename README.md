@@ -75,7 +75,7 @@ As this repo grows, layers will progressively cover more of the Yocto/BitBake fe
 |---|---|
 | Target Board | STM32MP257F-DK (Cortex-A35, industrial Linux board) |
 | Build Host | Ubuntu 24.04 LTS |
-| Distro | ST OpenSTLinux (Yocto Scarthgap-based) |
+| Distro | ST OpenSTLinux (Yocto Scarthgap-based) / meta-bootlin layer were made with Wrynose Releases |
 
 ---
 
