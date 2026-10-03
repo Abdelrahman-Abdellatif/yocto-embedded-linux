@@ -85,8 +85,8 @@ Each layer can be added independently to a Yocto build using `bitbake-layers add
 
 ```bash
 git clone https://github.com/Abdelrahman-Abdellatif/yocto-embedded-linux
-bitbake-layers add-layer /path/to/yocto-embedded-linux/meta-student
-bitbake <recipe-name>
+bitbake-layers add-layer /path/to/yocto-embedded-linux/<layer-you-want-to-add>
+bitbake <recipe-name or image you want to build>
 ```
 
 ---
